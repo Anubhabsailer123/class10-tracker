@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Chapter Completion Tracker</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #e0eafc);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            margin-bottom: 40px;
+        }
+
+        .reset-btn {
+            display: block;
+            margin: 0 auto 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff5252;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .reset-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .subject {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 20px 30px;
+        }
+
+        .subject::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .subject::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        .subject::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+
+        .subject h2 {
+            color: #4a148c;
+            margin-bottom: 15px;
+        }
+
+        .sub-section {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sub-section h3 {
+            color: #00695c;
+            margin-bottom: 8px;
+        }
+
+        label {
+            display: block;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Class 10 Chapter Completion Tracker</h1>
+    <button class="reset-btn" onclick="resetAll()">Reset All</button>
+
+    <div class="subject">
+        <h2>English (First Flight + Footprints)</h2>
+        <div class="sub-section">
+            <h3>Prose</h3>
+            <label><input type="checkbox"> A Letter to God</label>
+            <label><input type="checkbox"> Nelson Mandela</label>
+            <label><input type="checkbox"> Stories About Flying</label>
+            <label><input type="checkbox"> Diary of Anne Frank</label>
+            <label><input type="checkbox"> Glimpses of India</label>
+            <label><input type="checkbox"> Mijbil the Otter</label>
+            <label><input type="checkbox"> Madam Rides the Bus</label>
+            <label><input type="checkbox"> Sermon at Benares</label>
+            <label><input type="checkbox"> The Proposal</label>
+        </div>
+        <div class="sub-section">
+            <h3>Poems</h3>
+            <label><input type="checkbox"> Dust of Snow</label>
+            <label><input type="checkbox"> Fire and Ice</label>
+            <label><input type="checkbox"> A Tiger in the Zoo</label>
+            <label><input type="checkbox"> How to Tell Wild Animals</label>
+            <label><input type="checkbox"> The Ball Poem</label>
+            <label><input type="checkbox"> Amanda!</label>
+            <label><input type="checkbox"> The Trees</label>
+            <label><input type="checkbox"> Fog</label>
+            <label><input type="checkbox"> The Tale of Custard the Dragon</label>
+            <label><input type="checkbox"> For Anne Gregory</label>
+        </div>
+        <div class="sub-section">
+            <h3>Footprints Without Feet</h3>
+            <label><input type="checkbox"> A Triumph of Surgery</label>
+            <label><input type="checkbox"> The Thief's Story</label>
+            <label><input type="checkbox"> The Midnight Visitor</label>
+            <label><input type="checkbox"> A Question of Trust</label>
+            <label><input type="checkbox"> Footprints Without Feet</label>
+            <label><input type="checkbox"> The Making of a Scientist</label>
+            <label><input type="checkbox"> The Necklace</label>
+            <label><input type="checkbox"> Bholi</label>
+            <label><input type="checkbox"> The Book that Saved the Earth</label>
+        </div>
+        <div class="sub-section">
+            <h3>Grammar</h3>
+            <label><input type="checkbox"> Discursive Passage</label>
+            <label><input type="checkbox"> Case-Based Passage</label>
+            <label><input type="checkbox"> Determiners</label>
+            <label><input type="checkbox"> Tenses</label>
+            <label><input type="checkbox"> Modals</label>
+            <label><input type="checkbox"> Subject – Verb Concord</label>
+            <label><input type="checkbox"> Reported Speech - Commands</label>
+            <label><input type="checkbox"> Reported Speech - Statements</label>
+            <label><input type="checkbox"> Reported Speech - Questions</label>
+        </div>
+    </div>
+
+    <button class="reset-btn" onclick="resetAll()">Reset All</button>
+
+    <script>
+        function resetAll() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+        }
+    </script>
+</body>
+
+</html>
